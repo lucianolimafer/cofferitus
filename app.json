@@ -1,0 +1,12 @@
+{
+  "name": "cofferitus",
+  "displayName": "cofferitus",
+  "expo": {
+    "name": "cofferitus",
+    "slug": "cofferitus",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
