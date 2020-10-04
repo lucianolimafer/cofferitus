@@ -8,7 +8,7 @@ export default function Recipes() {
     return (
         <View>
             <Text style={styles.topic}>
-                Nossos rituais
+                Rituais recentes
             </Text>
             <ScrollView 
                 horizontal={true}
@@ -51,7 +51,7 @@ export default function Recipes() {
 
 const styles = StyleSheet.create({
     topic: {
-        marginTop: 290,
+        marginTop: 20,
         fontSize: 25,
         fontWeight: 'bold',
         marginLeft: 40,
