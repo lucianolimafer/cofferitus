@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 import { Entypo, FontAwesome5 } from '@expo/vector-icons'; 
 
 
@@ -17,6 +17,15 @@ export default function Recipes() {
             >
 
                 <View style={styles.card}>
+                    <View style={styles.contentRecipes}>
+                        <View style={styles.textAreaRecipes}>
+                            <Text style={styles.titleRecipes}>Prensa Francesa</Text>
+                            <Text style={styles.textRecipes}>Lorem ipsum dolor sit elit. Sunt reprehenderit molestias vvoluptas fugit cupiditate magni sint molestiae recusandae eos.</Text>
+                        </View>
+                        <View>
+                            <Image style={styles.iconRecips} source={require('../../assets/icons/icons8-french-press-64.png')}/>
+                        </View>
+                    </View>
                     <View style={styles.cardBtn}>
                         <Entypo style={styles.icons} name="back-in-time" size={30} color="#13a69d" />
                         <Text style={styles.params}>2-4'</Text>
@@ -26,6 +35,21 @@ export default function Recipes() {
                 </View>
 
                 <View style={styles.card}>
+                    <View style={styles.contentRecipes}>
+                        <View style={styles.textAreaRecipes}>
+                            <Text style={styles.titleRecipes}>Prensa Aerea</Text>
+                            <Text style={styles.textRecipes}>Lorem ipsum dolor sit elit. Sunt reprehenderit molestias vvoluptas fugit cupiditate magni sint molestiae recusandae eos.</Text>
+                        </View>
+                        <View>
+                            <Image style={styles.iconRecips} source={require('../../assets/icons/press-64.png')}/>
+                        </View>
+                    </View>
+                    <View style={styles.cardBtn}>
+                        <Entypo style={styles.icons} name="back-in-time" size={30} color="#13a69d" />
+                        <Text style={styles.params}>2-4'</Text>
+                        <FontAwesome5 style={styles.icons} name="thermometer-quarter" size={30} color="#13a69d" />
+                        <Text style={styles.params}>100°</Text>
+                    </View>
                     <View style={styles.cardBtn}>
                         <Entypo style={styles.icons} name="back-in-time" size={30} color="#13a69d" />
                         <Text style={styles.params}>2-4'</Text>
@@ -36,6 +60,21 @@ export default function Recipes() {
                 </View>
 
                 <View style={styles.card}>
+                    <View style={styles.contentRecipes}>
+                        <View style={styles.textAreaRecipes}>
+                            <Text style={styles.titleRecipes}>Prensa Francesa</Text>
+                            <Text style={styles.textRecipes}>Lorem ipsum dolor sit elit. Sunt reprehenderit molestias vvoluptas fugit cupiditate magni sint molestiae recusandae eos.</Text>
+                        </View>
+                        <View>
+                            <Image style={styles.iconRecips} source={require('../../assets/icons/icons8-french-press-64.png')}/>
+                        </View>
+                    </View>
+                    <View style={styles.cardBtn}>
+                        <Entypo style={styles.icons} name="back-in-time" size={30} color="#13a69d" />
+                        <Text style={styles.params}>2-4'</Text>
+                        <FontAwesome5 style={styles.icons} name="thermometer-quarter" size={30} color="#13a69d" />
+                        <Text style={styles.params}>100°</Text>
+                    </View>
                     <View style={styles.cardBtn}>
                         <Entypo style={styles.icons} name="back-in-time" size={30} color="#13a69d" />
                         <Text style={styles.params}>2-4'</Text>
@@ -88,5 +127,27 @@ const styles = StyleSheet.create({
     },
     icons: {
         marginLeft: 10
+    },
+    contentRecipes:{
+        flexDirection: "row",
+    },
+    textAreaRecipes: {
+        width: '60%'
+    },
+    titleRecipes: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: "bold",
+        marginTop: 10,
+        marginLeft: 10
+    },
+    textRecipes: {
+        color: '#fff',
+        marginLeft: 10,
+        fontSize: 11
+    },
+    iconRecips: {
+        marginTop: 30,
+        height: 120
     }
 })
