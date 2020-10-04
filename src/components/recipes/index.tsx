@@ -51,7 +51,6 @@ export default function Recipes() {
 
 const styles = StyleSheet.create({
     topic: {
-        marginTop: 20,
         fontSize: 25,
         fontWeight: 'bold',
         marginLeft: 40,
